@@ -8,17 +8,17 @@ library(ggplot2)
 ##########
 ## Read in Data
 ##########
-geneExp <- read.table("GSE4051_data.tsv", stringsAsFactors = FALSE, sep = "\t", header=T)
+geneExp <- read.table("data/GSE4051_data.tsv", stringsAsFactors = FALSE, sep = "\t", header=T)
 head(geneExp[,1:5])
 
-sampleInfo <- read.table("GSE4051_design.tsv", stringsAsFactors = FALSE, sep = "\t", header=T)
+sampleInfo <- read.table("data/GSE4051_design.tsv", stringsAsFactors = FALSE, sep = "\t", header=T)
 head(sampleInfo)
 
 
 ##########
 ## Melt then Merge 
 ##########
-# Keeping it simple and just getting expression of two genes
+# Keeping it simple lets just look at the expression of two genes
 geneExp_twoGene<-geneExp[c("1429028_at","1416119_at"),]
 geneExp_twoGene$gene<-rownames(geneExp_twoGene)
 
