@@ -21,7 +21,6 @@ For more information on the actual paper see the associated [publication](http:/
 <p align="left">
   <img src="figures/Photoreceptor_cell.jpg" alt="cookbook" width="400" height="300">
     <figcaption> <sup>www.scientificanimations.com [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Photoreceptor_cell.jpg">via Wikimedia Commons</a></sup></figcaption>
-  </a>
 </p>
 
 #### How do I get this data?
