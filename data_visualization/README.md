@@ -16,7 +16,7 @@ install.packages(reshape2)
 #### Data We Will Be Using
 We will be looking at gene expression data from mouse photoreceptors. There are samples from different developmental stages (E16,P2,P6,P10 and 4 weeks) and two mouse lines, a wildtype (wt) and knockouts for rod cell specific transcription factor (NrlKO). The gene expression and sample information data were collected from the Gene Expression Omnibus (GEO), under study ID [GSE4051](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE4051).
 
-For more information on the actual paper see the associatied [publication](http://www.pnas.org/cgi/pmidlookup?view=long&pmid=16505381).
+For more information on the actual paper see the associated [publication](http://www.pnas.org/cgi/pmidlookup?view=long&pmid=16505381).
 
 <p align="left">
   <img src="figures/Photoreceptor_cell.jpg" alt="cookbook" width="400" height="300">
