@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome Basic teaching module 2019
 
-You can use the [editor on GitHub](https://github.com/redgar598/EMBL_BTM_2019/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In the BTM 2019 current predocs prepare modules and lectures to help the new predocs to get started with the predoc course and the rest of their PhD at EMBL and the out
 
 ### Markdown
 
