@@ -8,8 +8,8 @@ Add the links
 Alternatively you can run an Rstudio session in the cloud by signing up for an R stuido cloud account here
 
 #### Required Packages
-install.packages(ggplot2)
-install.packages(reshape2)
+    install.packages(ggplot2)
+    install.packages(reshape2)
 
 #### Example Data we will be using
 
