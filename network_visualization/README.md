@@ -1,5 +1,5 @@
 
-### BTM Network Visualization
+# BTM Network Visualization
 In order to follow along with this session you will need Cytoscape, but you can also just watch the walkthrough if you can't be bothered to install something. 
 
 #### Data We Will Be Using

@@ -1,5 +1,5 @@
 
-### BTM Data Visualization
+# BTM Data Visualization
 In order to follow along with this session you will need R (ideally R studio) with a few packages installed. 
 
 #### Options to use R Studio
