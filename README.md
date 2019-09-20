@@ -1,10 +1,10 @@
-## Welcome Basic teaching module 2019
+# Welcome Basic Teaching Module 2019
 
 In the BTM 2019 current predocs prepare modules and lectures to help the new predocs to get started with the predoc course and the rest of their PhD at EMBL and the out
 
-### Markdown
+### Data Visualization
+Here we will run through some basic ggplot examples in R. Using gene expression data across development in WT and mutant lines, to understand the utility of the ggplot system and inform about resources to go to for help in future plotting endeavours. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
