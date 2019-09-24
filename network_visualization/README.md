@@ -27,11 +27,11 @@ Complete information on the data set is available on the [Allen Institute Site](
 If you would like to explore the connections of projections in mouse brain structures download both csv files [here](https://github.com/redgar598/EMBL_BTM_2019/tree/master/network_visualization/data)
 
 Suggested network building:
-- File -> Import -> Network from File -> edges_allen.csv 
-- Label "injection" as the source for node connections and "structure_id" as the target. For values in injection column 385=VISp_edges and 1097=HY
-- File -> Import -> Table from File -> nodes_allen.csv 
-- "id" should automatically be the key to merge the edge and node tables. 
-- Under the Style tab and Node settings try Label as "acronym" since these are a bit more meaningful. 
+> - File -> Import -> Network from File -> edges_allen.csv 
+> - Label "injection" as the source for node connections and "structure_id" as the target. For values in injection column 385=VISp_edges and 1097=HY
+> - File -> Import -> Table from File -> nodes_allen.csv 
+> - "id" should automatically be the key to merge the edge and node tables. 
+> - Under the Style tab and Node settings try Label as "acronym" since these are a bit more meaningful. 
 
 According to the Allen Institute page "<em>Most commonly used for analysis are measures of the <strong>density of projection signal</strong> </em>"
 
