@@ -1,0 +1,53 @@
+# number of files to create
+n = 10
+
+# the first rule is defining for what will happen
+# its usually called all and the input
+# specifies all file paths that should exists
+# AFTER the pipeline is finished
+rule all:
+    input:
+        # expand is a snakemake command
+        # it is used to create file paths
+        # based on patterns and placeholders.
+        # Here we create n file paths for n
+        # output files.
+        expand("data/capitalized/{filenumber}.txt",
+               filenumber = range(0,n))
+
+# this rule is a dummy rule that produces input files
+# for us
+# In reality we would get input files from the internet
+# or from our local directories
+rule createFile:
+    # This rule produces output files 
+    # With path names of this pattern
+    output:
+        "data/textfiles/{filenumber}.txt"
+    # In this section we can have shell commands
+    # This could be anything you would write in 
+    # your command prompt.
+    shell:
+        """
+        echo "this could be any string" > {output}
+        """
+
+# This is our second rule
+# It takes a text file and capitalizes it
+rule capitalizeFile:
+    # This is the input location we want to work on
+    input:
+        "data/textfiles/{filenumber}.txt"
+    # and this is the output we'll create
+    output:
+        "data/capitalized/{filenumber}.txt"
+    # This is a "simple" sed expression to capitalize text
+    # Note: Patterns used in these code blocks need to escape {} and \
+    shell:
+        """
+        sed -e 's/\(.*\)/\\U\\1/' {input} > {output}
+        """
+
+# Run this script by calling snakemake
+
+

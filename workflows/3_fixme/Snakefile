@@ -1,0 +1,95 @@
+# here we import pandas (install via conda)
+import pandas as pd
+
+# loads a config file and provides the content as 
+# config object
+configfile: "config/config.yaml"
+
+# load all sample we want to process
+samples = pd.read_table("config/samples.tsv")
+
+
+
+rule all:
+    input:
+        expand("{data}/plot/tsne_{which}.png",
+                data = config['data'],
+                which = ['cleaned', 'cutup'])
+
+
+rule gunzip:
+    input:
+        "{file}.fna.gz"
+    output:
+        "{file}.fna"
+    shell:
+        """
+        gunzip -c {input} > {output}
+        """
+    
+
+rule cleanFasta:
+    input:
+        "{data}/genomes/{file}.fna"
+    output:
+        "{data}/cleaned/{file}.fna"
+    shell:
+        """
+        python3 scripts/rename_multifasta_prefix.py \
+            -f {input} \
+            -s -p {wildcards.file} > {output}
+        """
+
+rule cutupFasta:
+    input:
+        "{data}/cleaned/{file}.fna"
+    output:
+        "{data}/cutup/{file}.fna"
+    params:
+        size = 10000
+    shell:
+        """
+        python3 scripts/cut_up_fasta.py -c {params.size} \
+            -m {input} > {output}
+        """
+
+rule kmerCount:
+    input:
+        "{data}/{which}/{file}.fna"
+    output:
+        "{data}/kmer/{file}_{which}.csv"
+    params:
+        k = 4
+    shell:
+        """
+        N=$(grep ">" {input} | wc -l)
+        python3 scripts/fasta_to_features.py {input} $N {params.k} {output}
+        """
+
+rule mergeData:
+    input:
+        wordcounts = expand("{{data}}/kmer/{file}_{{which}}.csv", 
+                             file = samples.genome)
+    output:
+        "{data}/merged/counts_{which}.csv"
+    run:
+        import pandas
+        import os
+        dfs = []
+        for path in input.wordcounts:
+            df = pd.read_csv(path)
+            df['file'] = os.path.basename(path)
+            dfs.append(df)
+        merged = pd.concat(dfs)
+        merged.to_csv(output[0], index = False)
+
+
+rule plot:
+    input:
+        "{data}/merged/counts_{which}.csv"
+    output:
+        "{data}/plot/tsne_{which}.png"
+    conda:
+        "envs/python3.yaml"
+    script:
+        "scripts/plot.py"

@@ -1,0 +1,5 @@
+channels:
+    - anaconda
+dependencies:
+    - seaborn
+    - scipy
