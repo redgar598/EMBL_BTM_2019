@@ -33,5 +33,5 @@ Suggested network building:
 - "id" should automatically be the key to merge the edge and node tables. 
 - Under the Style tab and Node settings try Label as "acronym" since these are a bit more meaningful. 
 
-According to the Allen Institute page "*Most commonly used for analysis are measures of the **density of projection signal**
+According to the Allen Institute page "<em>Most commonly used for analysis are measures of the <strong>density of projection signal</strong> </em>"
 
