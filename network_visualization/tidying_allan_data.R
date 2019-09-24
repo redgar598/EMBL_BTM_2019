@@ -31,6 +31,8 @@ nodes$injection_source<-sapply(1:nrow(nodes), function(x){
   if(nodes$id[x]%in%c("385","1097")){"source"}else{"target"}
 })
 
+nodes<-nodes[,c(1,2,4,3)]
+nodes$full_name<-gsub(","," -",nodes$full_name)
 
 edges<-rbind(VISp_edges,HY_edges)
 edges$is_injection<-NULL
