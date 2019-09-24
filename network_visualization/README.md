@@ -35,3 +35,8 @@ Suggested network building:
 
 According to the Allen Institute page "<em>Most commonly used for analysis are measures of the <strong>density of projection signal</strong> </em>"
 
+
+<p align="left">
+  <img url="
+https://cdn.pixabay.com/photo/2017/01/30/23/55/brain-2022398_960_720.png" width="400" height="300">
+</p>
