@@ -24,7 +24,7 @@ Complete information on the data set is available on the [Allen Institute Site](
 
 [Information on the fields available in the network](http://alleninstitute.github.io/AllenSDK/unionizes.html)
 
-If you would like to explore the connections of projections in mouse brain structures download both csv files [here](https://redgar598.github.io/EMBL_BTM_2019/network_visualization/data)
+If you would like to explore the connections of projections in mouse brain structures download both csv files [here](https://github.com/redgar598/EMBL_BTM_2019/tree/master/network_visualization/data)
 
 Suggested network building:
 - File -> Import -> Network from File -> edges_allen.csv 
@@ -33,5 +33,5 @@ Suggested network building:
 - "id" should automatically be the key to merge the edge and node tables. 
 - Under the Style tab and Node settings try Label as "acronym" since these are a bit more meaningful. 
 
-According to the Allen Institute page "*Most commonly used for analysis are measures of the **density of projection signal** *"
+According to the Allen Institute page "*Most commonly used for analysis are measures of the **density of projection signal**
 
