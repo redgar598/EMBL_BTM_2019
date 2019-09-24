@@ -19,7 +19,12 @@ We will walk through an example together then you are free to work through one e
 
 #### How do I get this data?
 
-# Brain Cell Connectivity
+___
+
+
+<br/><br/>
+
+## Brain Cell Connectivity
 Complete information on the data set is available on the [Allen Institute Site](http://alleninstitute.github.io/AllenSDK/connectivity.html). In short, the data collected consists of axonal projections targeting adult mouse brain structures. Selected experiments are from wild-type injections into the hypothalamus (HY) and into primary visual area (VISp).
 
 [Information on the fields available in the network](http://alleninstitute.github.io/AllenSDK/unionizes.html)
@@ -37,6 +42,6 @@ According to the Allen Institute page "<em>Most commonly used for analysis are m
 
 
 <p align="left">
-  <img url="
-https://cdn.pixabay.com/photo/2017/01/30/23/55/brain-2022398_960_720.png" width="400" height="300">
+  <img src="figures/brain-2022398_960_720.png" width="250" height="200">
 </p>
+
