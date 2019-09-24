@@ -1,0 +1,46 @@
+id,acronym,full_name,injection_source
+797,ZI,Zona incerta,target
+606826651,MMm,Medial mammillary nucleus, medial part,target
+557,TM,Tuberomammillary nucleus,target
+946,PH,Posterior hypothalamic nucleus,target
+331,MBO,Mammillary body,target
+491,MM,Medial mammillary nucleus,target
+63,PVHd,Paraventricular hypothalamic nucleus, descending division,target
+606826647,MMl,Medial mammillary nucleus, lateral part,target
+525,SUM,Supramammillary nucleus,target
+614,TU,Tuberal nucleus,target
+1097,HY,Hypothalamus,source
+689,VLPO,Ventrolateral preoptic nucleus,target
+226,LPO,Lateral preoptic area,target
+523,MPO,Medial preoptic area,target
+606826659,MMd,Medial mammillary nucleus, dorsal part,target
+467,MEZ,Hypothalamic medial zone,target
+732,MMme,Medial mammillary nucleus, median part,target
+263,AVP,Anteroventral preoptic nucleus,target
+576073704,PeF,Perifornical nucleus,target
+1,TMv,Tuberomammillary nucleus, ventral part,target
+390,SO,Supraoptic nucleus,target
+980,PMd,Dorsal premammillary nucleus,target
+173,RCH,Retrochiasmatic area,target
+194,LHA,Lateral hypothalamic area,target
+88,AHN,Anterior hypothalamic nucleus,target
+290,LZ,Hypothalamic lateral zone,target
+223,ARH,Arcuate hypothalamic nucleus,target
+830,DMH,Dorsomedial nucleus of the hypothalamus,target
+126,PVp,Periventricular hypothalamic nucleus, posterior part,target
+141,PVR,Periventricular region,target
+157,PVZ,Periventricular zone,target
+1004,PMv,Ventral premammillary nucleus,target
+515,MPN,Medial preoptic nucleus,target
+38,PVH,Paraventricular hypothalamic nucleus,target
+118,PVi,Periventricular hypothalamic nucleus, intermediate part,target
+693,VMH,Ventromedial hypothalamic nucleus,target
+272,AVPV,Anteroventral periventricular nucleus,target
+364,PSTN,Parasubthalamic nucleus,target
+470,STN,Subthalamic nucleus,target
+804,FF,Fields of Forel,target
+347,SBPV,Subparaventricular zone,target
+133,PVpo,Periventricular hypothalamic nucleus, preoptic part,target
+72,ADP,Anterodorsal preoptic nucleus,target
+1109,PS,Parastrial nucleus,target
+385,VISp,Primary visual area,source
