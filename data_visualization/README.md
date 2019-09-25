@@ -30,17 +30,10 @@ For more information on the actual paper see the associated [publication](http:/
 
 #### How do I get this data?
 
-<ul>
-<li>Set up with git up? clone the BTM repo</li>
-</ul>
+
+-Set up with git up? clone the BTM repo</li>
 ```
 git clone https://github.com/redgar598/EMBL_BTM_2019.git
 ```
-<ul>
-<li>want everything but don't have git?
-<ul>
-<li>https://github.com/redgar598/EMBL_BTM_2019/archive/master.zip</li>
-</ul>
-</li>
-<li>collect the R script ([gene_expression_example_plots.R](https://github.com/redgar598/EMBL_BTM_2019/blob/master/data_visualization/gene_expression_example_plots.R)) and [data](https://github.com/redgar598/EMBL_BTM_2019/tree/master/data_visualization/data) individually</li>
-</ul>
+-want everything but don't have git? Download [this](https://github.com/redgar598/EMBL_BTM_2019/archive/master.zip)
+-collect the R script ([gene_expression_example_plots.R](https://github.com/redgar598/EMBL_BTM_2019/blob/master/data_visualization/gene_expression_example_plots.R)) and [data](https://github.com/redgar598/EMBL_BTM_2019/tree/master/data_visualization/data) individually
