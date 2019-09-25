@@ -13,6 +13,11 @@ install.packages(ggplot2)
 install.packages(reshape2)
 ```
 
+or with conda
+```
+conda install -c conda-forge r-ggplot2 r-reshape2 
+```
+
 #### Data We Will Be Using
 We will be looking at gene expression data from mouse photoreceptors. There are samples from different developmental stages (E16,P2,P6,P10 and 4 weeks) and two mouse lines, a wildtype (wt) and knockouts for rod cell specific transcription factor (NrlKO). The gene expression and sample information data were collected from the Gene Expression Omnibus (GEO), under study ID [GSE4051](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE4051).
 

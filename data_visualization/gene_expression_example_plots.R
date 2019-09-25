@@ -156,7 +156,7 @@ ggplot(data_for_plot, aes(devStage, expression, color=gType, group=gType))+
 #geom_line tries to connect all the individual data points, where as stat summary, summarizes the groups to a value. Here we chose median
 
 
-# Lets forget about the developmental data and look insetad of differences between genes
+# Lets forget about the developmental data and look instead of differences between genes
 
 # basic format: ggplot(data, aes(x_axis, y_axis))
 ggplot(data_for_plot, aes(gene, expression))+
@@ -174,7 +174,130 @@ ggplot(data_for_plot, aes(gene, expression, color=gType))+
   geom_boxplot()+
   geom_point(size=2)+
   theme_bw()+ facet_wrap(~gType)+
-  scale_color_manual(values=c("#41ab5d","#bdbdbd"))
+  scale_color_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")
  
-# the point are ovelapping 
+# the points are ovelapping so lets spread them out with jitter
+ggplot(data_for_plot, aes(gene, expression, color=gType))+
+  geom_boxplot()+
+  geom_point(size=2, position = position_jitter(width=0.05))+
+  theme_bw()+ facet_wrap(~gType)+
+  scale_color_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")
+
+# Violin plot with the boxplot to show the data distribution
+ggplot(data_for_plot, aes(gene, expression, color=gType))+
+  geom_violin()+
+  geom_boxplot(width=0.25)+
+  geom_point(size=2, position = position_jitter(width=0.05))+
+  theme_bw()+ facet_wrap(~gType)+
+  scale_color_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")
+
+
+# generally nicer looking
+# aes statements can also be added to specific layers of the plot but not others
+# here we will color the boxplot and points but not the violin
+ggplot(data_for_plot, aes(gene, expression))+
+  geom_violin()+
+  geom_boxplot(aes(color=gType),width=0.25)+
+  geom_point(aes(color=gType),size=2, position = position_jitter(width=0.05))+
+  theme_bw()+ facet_wrap(~gType)+
+  scale_color_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")
+
+## instead of color you can fill an element (note the scale_color_manual change to fill aswell)
+ggplot(data_for_plot, aes(gene, expression))+
+  geom_violin()+
+  geom_boxplot(aes(fill=gType),width=0.25)+
+  geom_point(aes(fill=gType),shape=21, size=2, position = position_jitter(width=0.05))+
+  theme_bw()+ facet_wrap(~gType)+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")
+
+## adjusting the look of the violin
+ggplot(data_for_plot, aes(gene, expression))+
+  geom_violin(fill="grey85", color="white")+
+  geom_boxplot(aes(fill=gType),width=0.25)+
+  geom_point(aes(fill=gType),shape=21, size=2, position = position_jitter(width=0.05))+
+  theme_bw()+ facet_wrap(~gType)+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")
+
+## Edit axis labels
+ggplot(data_for_plot, aes(gene, expression))+
+  geom_violin(fill="grey85", color="white")+
+  geom_boxplot(aes(fill=gType),width=0.25)+
+  geom_point(aes(fill=gType),shape=21, size=2, position = position_jitter(width=0.05))+
+  theme_bw()+ facet_wrap(~gType)+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  xlab("Gene")+ylab("Gene Expression")
+
+
+
+## Another way to look at the same data
+ggplot(data_for_plot, aes(expression, fill=gene))+
+  geom_density()+theme_bw()+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  xlab("Gene Expression")
+  
+# add transparency with alpha
+ggplot(data_for_plot, aes(expression, fill=gene))+
+  geom_density(alpha=0.5)+theme_bw()+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  xlab("Gene Expression")
+
+
+#################
+## combining two plots (requires another package install)
+#################
+
+## plot 1
+# Expression of both genes over development
+data_for_plot_onegene<-data_for_plot[which(data_for_plot$gene=="1429028_at"),]
+
+
+ggplot(data_for_plot_onegene, aes(devStage, expression))+
+  geom_point(aes(fill=gType),size=3, shape=21, color="black")+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  theme_bw()+xlab("Developmental Stage")+ylab("Gene Expression")
+
+# assign the plot to a object name
+scatter<-ggplot(data_for_plot_onegene, aes(devStage, expression))+
+  geom_point(aes(fill=gType),size=3, shape=21, color="black")+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  theme_bw()+xlab("Developmental Stage")+ylab("Gene Expression")
+
+## plot 2
+# Expression values density plot
+
+ggplot(data_for_plot_onegene, aes(expression))+
+  geom_density(aes(fill=gType),color="black", alpha=0.5)+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  theme_bw()+xlab("Gene Expression")
+
+ggplot(data_for_plot_onegene, aes(expression))+
+  geom_density(aes(fill=gType),color="black", alpha=0.5)+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  theme_bw()+xlab("Gene Expression")+coord_flip()
+
+density<-ggplot(data_for_plot_onegene, aes(expression))+
+  geom_density(aes(fill=gType),color="black", alpha=0.5)+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  theme_bw()+xlab("Gene Expression")+coord_flip()
+
+#install.packages(gridExtra)
+# or conda install -c r r-gridextra
+library(gridExtra)
+
+grid.arrange(scatter, density, ncol=2, widths=c(2,1))
+
+# remove scatter legend
+scatter<-ggplot(data_for_plot_onegene, aes(devStage, expression))+
+  geom_point(aes(fill=gType),size=3, shape=21, color="black")+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype", guide="none")+
+  theme_bw()+xlab("Developmental Stage")+ylab("Gene Expression")
+
+#remove density xlab
+density<-ggplot(data_for_plot_onegene, aes(expression))+
+  geom_density(aes(fill=gType),color="black", alpha=0.5)+
+  scale_fill_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")+
+  theme_bw()+xlab("")+coord_flip()
+
+grid.arrange(scatter, density, ncol=2, widths=c(2,1))
+
 
