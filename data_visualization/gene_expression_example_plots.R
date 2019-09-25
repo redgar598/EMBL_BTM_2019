@@ -35,6 +35,7 @@ head(geneExp_twoGene_longform)
 # what about sample information, that is important for the plotting
 head(sampleInfo)
 
+
 # We want one big dataframe, whihc contains the sample information and the expression values
 # Here were will merge the sample information and expression values (melted) into one data frame
 # Melting then merging is a common steps for data managing into ggplot
@@ -43,9 +44,16 @@ head(geneExp_twoGene_longform)
 head(data_for_plot)
 
 
+#############
+### Time to plot!
+#############
+
+# Set the basic plot layout and axis (no plot type specified here)
+
+# basic format: ggplot(data, aes(x_axis, y_axis))
+ggplot(data_for_plot, aes(devStage, expression))  
 
 ### Scatter plot
-# basic format: ggplot(data, aes(x_axis, y_axis))
 ggplot(data_for_plot, aes(devStage, expression))+
   geom_point()# plot data as points
 
@@ -91,13 +99,30 @@ ggplot(data_for_plot, aes(devStage, expression, color=gType))+
   facet_wrap(~gene)+
   scale_color_manual(values=c("#41ab5d","#bdbdbd"))
 
+# Make the legend Title meaningful
+ggplot(data_for_plot, aes(devStage, expression, color=gType))+
+  geom_point()+
+  facet_wrap(~gene)+
+  scale_color_manual(values=c("#41ab5d","#bdbdbd"), name="Genotype")
+
+
 # I love ggplot but I don't like the default grey background
-# Probably cause I like to use grey for the WT or control in my plots to suggest it is the less interesting group
+# This can be changed easily with some default theme settings (you can also start building our own theme someday)
+# Generally I don't like the grey background because 
+# I like to use grey for the WT or control points in my plots. To me grey suggests this is the less interesting group
+
 ggplot(data_for_plot, aes(devStage, expression, color=gType))+
   geom_point()+
   facet_wrap(~gene)+
   scale_color_manual(values=c("#41ab5d","#bdbdbd"))+
-  theme_bw()
+  theme_bw() # my favourite
+
+ggplot(data_for_plot, aes(devStage, expression, color=gType))+
+  geom_point()+
+  facet_wrap(~gene)+
+  scale_color_manual(values=c("#41ab5d","#bdbdbd"))+
+  theme_classic() # not my favourite, but also nice
+
 
 # bigger points please
 ggplot(data_for_plot, aes(devStage, expression, color=gType))+
@@ -115,8 +140,9 @@ ggplot(data_for_plot, aes(devStage, expression, color=gType))+
   geom_line()
 
 
-# Nope that isn't right! - then you google image search for what you want 
+# NOPE that isn't right! - why not? Here I would google image search for what you want 
 
+# 'ggplot mean trend line'
 #https://tinyurl.com/y244dd4t
 #https://digibio.blogspot.com/2016/09/box-plots-and-connect-by-median.html
 
@@ -130,4 +156,25 @@ ggplot(data_for_plot, aes(devStage, expression, color=gType, group=gType))+
 #geom_line tries to connect all the individual data points, where as stat summary, summarizes the groups to a value. Here we chose median
 
 
+# Lets forget about the developmental data and look insetad of differences between genes
+
+# basic format: ggplot(data, aes(x_axis, y_axis))
+ggplot(data_for_plot, aes(gene, expression))+
+  geom_point(size=2)+
+  theme_bw()
+
+# Add a boxplot
+ggplot(data_for_plot, aes(gene, expression))+
+  geom_boxplot()+
+  geom_point(size=2)+
+  theme_bw()
+
+# Lets facet by genotype again
+ggplot(data_for_plot, aes(gene, expression, color=gType))+
+  geom_boxplot()+
+  geom_point(size=2)+
+  theme_bw()+ facet_wrap(~gType)+
+  scale_color_manual(values=c("#41ab5d","#bdbdbd"))
+ 
+# the point are ovelapping 
 
