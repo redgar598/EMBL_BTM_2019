@@ -5,7 +5,7 @@ In the BTM 2019 current predocs prepare modules and lectures to help the new pre
 ## Recommended Software
 ### Anaconda
 - Most software we will use can be easily installed together with [Anaconda](https://www.anaconda.com/distribution/)
-- Once you have Anacaonda install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) with 
+- Once you have Anacaonda, then install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) using conda 
 > conda install -c conda-forge jupyterlab
 - And install git with 
 > conda install -c anaconda git 
