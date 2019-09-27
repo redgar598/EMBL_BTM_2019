@@ -24,6 +24,27 @@ ___
 
 <br/><br/>
 
+## Gene Coexpression Data 
+The gene expression and sample information data were collected from the Gene Expression Omnibus (GEO), under study ID [GSE4051](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE4051). The coexpression weights are from a Weighted Gene Coexpression Netwrok Analysis ( [WGCNA](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/) ). Only the 95 most variable genes were used for calculating coexpression. Genes were sorted into two coexpression clusters (turquoise and grey), which represent genes expressed with a similar pattern as cross samples. 
+
+Suggested network building:
+> - File -> Import -> Network from File -> gene_coexpression_edges.txt 
+> - Label "fromNode" as the source for node connections and "toNode" as the target.
+> - File -> Import -> Table from File -> gene_coexpression_nodes.txt 
+> - "nodeName" should automatically be the key to merge the edge and node tables. 
+> - Under the Style tab and Node settings try Fill Color as "nodeAttr". Try and match cluster name to actual color.
+> - Then layout so the grey and turquiose modules are seperate
+> - Find the clearest way to weight the edges by the coexpression weight (i.e transparency, color, width)
+
+
+<p align="left">
+  <img src="figures/bbw139f1p.png" width="500" height="300">
+  <figcaption> <sup>van Dam S, Võsa U, van der Graaf A, Franke L, de Magalhães JP. (2017) Gene co-expression analysis for functional classification and gene-disease predictions. Brief Bioinform</sup></figcaption>
+  
+</p>
+
+
+
 ## Brain Cell Connectivity
 Complete information on the data set is available on the [Allen Institute Site](http://alleninstitute.github.io/AllenSDK/connectivity.html). In short, the data collected consists of axonal projections targeting adult mouse brain structures. Selected experiments are from wild-type injections into the hypothalamus (HY) and into primary visual area (VISp).
 
@@ -44,4 +65,6 @@ According to the Allen Institute page "<em>Most commonly used for analysis are m
 <p align="left">
   <img src="figures/brain-2022398_960_720.png" width="250" height="200">
 </p>
+
+
 

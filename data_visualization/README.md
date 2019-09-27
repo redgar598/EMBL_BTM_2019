@@ -24,7 +24,7 @@ We will be looking at gene expression data from mouse photoreceptors. There are 
 For more information on the actual paper see the associated [publication](http://www.pnas.org/cgi/pmidlookup?view=long&pmid=16505381).
 
 <p align="left">
-  <img src="figures/Photoreceptor_cell.jpg" alt="cookbook" width="400" height="300">
+  <img src="figures/Photoreceptor_cell.jpg" alt="cookbook" width="350" height="200">
     <figcaption> <sup>www.scientificanimations.com [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Photoreceptor_cell.jpg">via Wikimedia Commons</a></sup></figcaption>
 </p>
 
