@@ -1,6 +1,6 @@
 
 # BTM Network Visualization
-In order to follow along with this session you will need Cytoscape, but you can also just watch the walkthrough if you can't be bothered to install something. 
+In order to follow along with this session you will need <strong>Cytoscape</strong>, but you can also just watch the walkthrough if you can't to install something. 
 
 
 <p align="left">
