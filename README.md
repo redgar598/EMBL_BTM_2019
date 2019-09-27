@@ -16,7 +16,10 @@ In the BTM 2019 current predocs prepare modules and lectures to help the new pre
 2. Download [R Studio](https://www.rstudio.com/products/rstudio/download/#download) to your local machine 
 3. Alternatively you can run an Rstudio session in the [cloud](https://rstudio.cloud/) by signing up for an account
 
+___
 
+
+<br/><br/>
 ## Session Materials
 
 ### [Data Visualization](https://redgar598.github.io/EMBL_BTM_2019/data_visualization/)
