@@ -38,7 +38,7 @@ Suggested network building:
 
 
 <p align="left">
-  <img src="figures/bbw139f1p.png" width="500" height="300">
+  <img src="figures/bbw139f1p.png" width="600" height="300">
   <figcaption> <sup>van Dam S, Võsa U, van der Graaf A, Franke L, de Magalhães JP. (2017) Gene co-expression analysis for functional classification and gene-disease predictions. Brief Bioinform</sup></figcaption>
   
 </p>
