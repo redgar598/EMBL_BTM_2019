@@ -1,5 +1,6 @@
 channels:
     - anaconda
 dependencies:
+    - scikit-learn
     - seaborn
     - scipy
