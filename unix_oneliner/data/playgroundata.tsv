@@ -1,0 +1,80 @@
+what	name	present	comment
+meeting	Maya	1	Particular
+lunch	Maya	0	
+talk	Franka	1	
+BTM	Franka	1	well
+lunch	Borris	0	
+lunch	Julia	0	
+talk	John	0	
+meeting	Paul	1	
+meeting	Ronald	1	BTM
+talk	Ronald	0	
+lunch	Marie	0	
+talk	Marie	1	
+meeting	Franka	0	
+talk	Max	0	name
+meeting	Max	1	
+meeting	Borris	1	In
+BTM	Paul	0	
+talk	Maya	0	
+meeting	Borris	0	BTM
+lunch	Ronald	1	
+lunch	Max	0	
+talk	John	0	
+BTM	Anna	0	
+BTM	Borris	0	
+BTM	Franka	0	
+meeting	Anna	0	
+lunch	Maya	1	
+talk	Julia	1	
+meeting	Julia	1	
+BTM	Maya	0	
+BTM	Julia	0	
+BTM	Ronald	1	
+lunch	Ronald	1	
+meeting	Maya	1	
+talk	Ronald	1	
+meeting	Marie	1	comment
+meeting	Paul	0	
+meeting	Franka	0	
+meeting	Anna	0	what
+talk	Franka	1	
+talk	Maya	0	
+lunch	Paul	0	
+meeting	Max	1	
+meeting	Paul	0	
+lunch	Franka	1	
+BTM	John	0	
+talk	Borris	0	
+lunch	Borris	0	
+BTM	Anna	0	
+meeting	Ronald	0	
+BTM	Ronald	0	
+talk	Max	1	
+talk	Paul	1	
+talk	Marie	1	
+BTM	Anna	1	
+lunch	Anna	0	
+talk	Paul	1	
+meeting	John	0	Nothing
+talk	Max	1	
+BTM	Max	0	
+BTM	Marie	0	
+talk	John	1	present
+meeting	Marie	0	
+talk	Anna		Missing data
+meeting	John	1	
+talk	Julia	0	
+lunch	John	1	
+lunch	Max	0	
+lunch	Anna	0	
+lunch	Paul	1	
+BTM	Paul	0	
+lunch	Franka	1	
+meeting	Julia	1	
+BTM	Borris	1	Very
+talk	Julia	0	
+talk	Marie	0	
+talk	Borris	1	
+BTM	Julia	1	done
+talk		1	
