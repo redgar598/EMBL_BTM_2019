@@ -26,7 +26,6 @@ rule gunzip:
         """
         gunzip -c {input} > {output}
         """
-    
 
 rule cleanFasta:
     input:
@@ -93,3 +92,11 @@ rule plot:
         "envs/python3.yaml"
     script:
         "scripts/plot.py"
+
+rule stats:
+    input:
+        genome = "{data}/genomes/{genome}.fna",
+        cleaned = "{data}/cleaned/{genome}.fna"
+    output:
+        "{data}/stats/{genome}.summary"
+    script: "scripts/nucfreq.py"
