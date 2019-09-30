@@ -38,3 +38,21 @@ git clone https://github.com/redgar598/EMBL_BTM_2019.git
 
 - Collect the R script ([gene_expression_example_plots.R](https://github.com/redgar598/EMBL_BTM_2019/blob/master/data_visualization/gene_expression_example_plots.R)) and [data](https://github.com/redgar598/EMBL_BTM_2019/tree/master/data_visualization/data) individually
 
+
+___
+
+
+<br/><br/>
+
+# BTM Data Visualization Part 2
+This session will be a workshop with several examples of complex plots presented. The goal will be to recreate these plots in R and ggplot. The aim is that thorough recreating these plots we can explore the many elements available to make complex plots in R without adjustment in a illustrator software. 
+
+We will start with a [volcano plot](https://github.com/redgar598/EMBL_BTM_2019/blob/master/data_visualization/extended_plotting.R) I have made. 
+
+
+<p align="left">
+  <a href="https://github.com/redgar598/EMBL_BTM_2019/tree/master/data_visualization">
+<img src="figures/volcano.png"  width="500" height="400">
+  </a>
+</p>
+
