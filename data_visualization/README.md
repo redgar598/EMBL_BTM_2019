@@ -34,6 +34,13 @@ For more information on the actual paper see the associated [publication](http:/
 ```
 git clone https://github.com/redgar598/EMBL_BTM_2019.git
 ```
+- clone right from RStudio (detailed instructions [here](https://happygitwithr.com/new-github-first.html))  
+    - Start a new project (file>new project or new project drop down then "New Project from Git Repo"))
+    - Then select Version Control, then git
+    - Paste the repository url https://github.com/redgar598/EMBL_BTM_2019.git
+    - In an ideal world you will end up with all the EMBL_BTM scripts/data cloned and ready
+    - Check out the data_visualization folder, it is the best one!
+
 - Want everything but don't have git? Download [this](https://github.com/redgar598/EMBL_BTM_2019/archive/master.zip)
 
 - Collect the R script ([gene_expression_example_plots.R](https://github.com/redgar598/EMBL_BTM_2019/blob/master/data_visualization/gene_expression_example_plots.R)) and [data](https://github.com/redgar598/EMBL_BTM_2019/tree/master/data_visualization/data) individually
