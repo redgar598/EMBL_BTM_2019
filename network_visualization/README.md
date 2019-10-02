@@ -54,7 +54,6 @@ If you would like to explore the connections of projections in mouse brain struc
 
 Suggested network building:
 > - File -> Import -> Network from File -> edges_allen.csv 
-> - Label "injection" as the source for node connections and "structure_id" as the target. For values in injection column 385=VISp_edges and 1097=HY
 > - File -> Import -> Table from File -> nodes_allen.csv 
 > - "id" should automatically be the key to merge the edge and node tables. 
 > - Under the Style tab and Node settings try Label as "acronym" since these are a bit more meaningful. 
@@ -67,4 +66,22 @@ According to the Allen Institute page "<em>Most commonly used for analysis are m
 </p>
 
 
+## Co-authorship Network
+This network is less biologically relevant and more of a social analysis. It generates a networks based on one author (indexed in pubmed) and connects them to their co-authors. 
 
+This will be a bit more advanced because it requires the install of an app within Cytoscape. Detailed instructions are available [here](http://baderlab.org/Software/SocialNetworkApp#Installation).
+
+
+
+<p align="left">
+  <img src="figures/redgar_network.png" width="400" height="200">
+</p>
+
+
+<br/><br/>
+
+
+## Affinity purification-mass spectrometry 
+This is an example from the cytoscape website. I am not familiar with this [tutorial](https://cytoscape.org/cytoscape-tutorials/protocols/AP-MS-network-analysis/#/) but wanted to include it in case there is interest in this type of network. Happy to help with any issues with the tutorial. From the website:
+
+>This protocol describes how to use data from an affinity purification-mass spectrometry experiment to to generate relevant interaction networks, enriching the networks with information from public resources, analyzing the networks and creating effective visualizations.
