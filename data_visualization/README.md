@@ -57,9 +57,9 @@ install.packages(gridExtra)
 ```
 
 or through conda
+
 ```
 conda install -c conda-forge ggplot r-reshape2 r-rcolorbrewer r-scales r-gridextra
-
 ```
 
 We will start with a [volcano plot](https://github.com/redgar598/EMBL_BTM_2019/blob/master/data_visualization/extended_plotting.R) I have made. 
