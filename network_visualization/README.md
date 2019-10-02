@@ -74,7 +74,7 @@ This will be a bit more advanced because it requires the install of an app withi
 
 
 <p align="left">
-  <img src="figures/redgar_network.png" width="400" height="200">
+  <img src="figures/redgar_network.png" width="400" height="400">
 </p>
 
 
