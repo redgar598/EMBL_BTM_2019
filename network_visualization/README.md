@@ -10,14 +10,14 @@ In order to follow along with this session you will need [Cytoscape](https://cyt
 
 
 
-#### Networks We Will Be Using
+#### Networks you can try out
 We will walk through an example together then you are free to work through one example network visulization on either:
+- Gene co-expression 
 - Cell-cell connectivity
-- Gene co-expression
 - Authorship network
+- Affinity purification-mass spectrometry 
 
 
-#### How do I get this data?
 
 ___
 
