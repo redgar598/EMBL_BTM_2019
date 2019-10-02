@@ -28,7 +28,7 @@ For more information on the actual paper see the associated [publication](http:/
     <figcaption> <sup>www.scientificanimations.com [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Photoreceptor_cell.jpg">via Wikimedia Commons</a></sup></figcaption>
 </p>
 
-#### How do I get this data?
+#### How do I get this data? Four possible ways:
 
 - Set up with git up? clone the BTM repo
 ```
