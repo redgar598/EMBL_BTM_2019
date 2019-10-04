@@ -78,3 +78,46 @@ We will start with a [volcano plot](https://github.com/redgar598/EMBL_BTM_2019/b
   </a>
 </p>
 
+### Examples to Try and Replicate
+<br/>
+
+#### Example 1
+This example is take from the [simply statistics blog](https://simplystatistics.org/2019/08/28/you-can-replicate-almost-any-plot-with-ggplot2/). 
+
+<p align="left">
+  <img src="figures/wsj-vaccines-example-1.png" width="400" height="300">
+</p>
+
+The "dslabs" package is the data set to plot and "dplyr" is recommended for data tidying but not necessary. 
+
+
+```
+install.packages("dslabs")
+install.packages("dplyr") #or with conda: conda install -c conda-forge r-dplyr 
+
+library(dslabs)
+data(us_contagious_diseases)
+head(us_contagious_diseases)
+```
+<br/>
+
+#### Example 2
+
+Principal Components Analysis (PCA) was done on gene expression data. The output is saved in 'gene_expression_PCA_data.RData' Loadings are the PCA loadings for each sample which can then be associated with sample information. Importance is the variance explained by each PC. I have used and ANOVA to generate the association P values of each PC and the sample information available. 
+
+<p align="left">
+  <img src="figures/heat_scree.png" width="400" height="300">
+</p>
+
+```
+load("data/gene_expression_PCA_data.RData")
+
+library(gridExtra)
+library(reshape2)
+library(ggplot2)
+```
+
+
+
+
+
