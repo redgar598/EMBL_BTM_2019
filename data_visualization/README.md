@@ -78,10 +78,10 @@ We will start with a [volcano plot](https://github.com/redgar598/EMBL_BTM_2019/b
   </a>
 </p>
 
-### Examples to Try and Replicate
+## Examples to Try and Replicate
 <br/>
 
-#### Example 1
+### Example 1
 This example is take from the [simply statistics blog](https://simplystatistics.org/2019/08/28/you-can-replicate-almost-any-plot-with-ggplot2/). 
 
 <p align="left">
@@ -101,7 +101,7 @@ head(us_contagious_diseases)
 ```
 <br/>
 
-#### Example 2
+### Example 2
 
 Principal Components Analysis (PCA) was done on gene expression data. The output is saved in 'gene_expression_PCA_data.RData' Loadings are the PCA loadings for each sample which can then be associated with sample information. Importance is the variance explained by each PC. I have used and ANOVA to generate the association P values of each PC and the sample information available. 
 
