@@ -22,6 +22,27 @@ man xargs
 
 Go here for basic introduction: https://github.com/stephenturner/oneliners
 
+## Pipes and such (the basics)
+
+In UNIX land we can use the output of one tool to use as the input of another. 
+This is usefull as most tools do one thing, but sometimes you want to do two or more
+steps and don't write to disk.
+
+### `>` direct output to file
+```
+echo "Hello" > file.txt
+```
+### `>>` append to file if possible
+echo "World" >> file.txt
+
+### `|` redirect
+```
+echo "Hello World" | sed 's/World/You/' 
+```
+
+Go here for more details:
+(http://www.westwind.com/reference/OS-X/commandline/pipes.html)
+
 
 ## Simple example 1
 Lets quickly introduce pipes and such.
@@ -44,6 +65,25 @@ cat toydata.csv | awk '{if($1 == "BTM" && $3){print $0}}'  | sort -k 2 | cut -f 
 ```
 What just happened?
 
+### Tasks
+- Can you find all sessions Paul was not present (present == 0)?
+- Can you count how many times each person went to the BTM
+
+<details>
+  <summary> Solutions:</summary>
+  
+  Task 1 solution
+  ```
+  awk '{if($2 == "Paul" && $3 == "1"){print $0}}' playgroundata.tsv | wc -l
+  ```
+
+  Task 2 solution
+  ```
+  awk '{if($3 == "1"){print $2}}' playgroundata.tsv | sort | uniq -c
+  ```
+
+</details>
+
 ## Simple example 2
 
 Lets get all transcription start sites in the human genome:
@@ -63,4 +103,3 @@ Who can explain what happened?
 ### Tasks
 
 - Output 5kb flanking tss
-- 
