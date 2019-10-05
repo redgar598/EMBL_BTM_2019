@@ -12,6 +12,7 @@ Go into the folder task_1 and merge all files ending with `.csv` into one table.
 <details>
   <summary>Soltution (spoiler)</summary>
   Simple solution:
+
   ```
   # we just open all files and write to a new one
   cat *.csv > all.csv
@@ -39,9 +40,13 @@ Say you got an email from the cluster team and they told you:
 You have used 81.24% (12.19 GB of 15.00 GB) on /vol/vol_homes/homes as user [NAME]
 ```
 
-How do you figure out which folders take up most space and what to delete?
+This usually hapens to me once every while, as I download something and forgot
+about it and now I need to figure out where to go to remove the large
+file that I probably don't need anymore.
 
-Go to the folder task2 and find the largest folder.
+How do you figure out which folders take up most space and what to delete? 
+
+**Task:** Go to the folder task2 and find the largest folder.
 
 Use google to help you (unix find folder size)
 
