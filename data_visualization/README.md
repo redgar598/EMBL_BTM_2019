@@ -117,7 +117,34 @@ library(reshape2)
 library(ggplot2)
 ```
 
+### Example 3
+The following example is for patient mutation data in relation of clinical factors. The provided code generates data to make the plot. 
 
+<p align="left">
+  <img src="figures/mutation_example.png" width="500" height="250">
+</p>
+
+```
+library(gridExtra)
+library(grid)
+library(ggplot2)
+
+set.seed(1)
+pt_id = c(1:279) # DEFINE PATIENT IDs
+smoke = rbinom(279,1,0.5) # DEFINE SMOKING STATUS
+hpv = rbinom(279,1,0.3) # DEFINE HPV STATUS
+data = data.frame(pt_id, smoke, hpv) # PRODUCE DATA FRAME
+
+data$site = sample(1:4, 279, replace = T)
+data$site[data$site == 1] = "Hypopharynx"
+data$site[data$site == 2] = "Larynx"
+data$site[data$site == 3] = "Oral Cavity"
+data$site[data$site == 4] = "Oropharynx"
+data$site_known = 1 
+
+data$freq = sample(1:1000, 279, replace = F)
+
+```
 
 
 
