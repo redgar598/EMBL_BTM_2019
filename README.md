@@ -27,3 +27,18 @@ Here we will run through some basic ggplot examples in R. Using gene expression 
 
 ### [Network Visualization](https://redgar598.github.io/EMBL_BTM_2019/network_visualization/)
 Here we look at how to visualize networks in Cytoscape. Will we work through the basic file format for cytoscape, how to import data and how to display data on both the nodes and edges of a built network. Will give workshop examples on gene expression, cell connectivity data and connection of authors on publications. Networks will be built elsewhere this will just be visualizing how networks are built is not covered.
+
+
+### [Not So Scary Shell](https://redgar598.github.io/EMBL_BTM_2019/not_so_scary_shell/)
+A session aimed at predocs unfamiliar with the UNIX shell. We will open the shell and learn how it is nothing but a portal into the inner workings of your laptop. You will learn how to make your life easier and that sometimes it can be a good idea to know how to use the shell.
+
+
+### [UNIX oneliner](https://redgar598.github.io/EMBL_BTM_2019/unix_oneliner/)
+In this session predocs will get familiar with UNIX one-liners. It is important for any bioinformatician to get the concept of these code snippets as you will stumble across them and might want to use them as well. So we will cover a short introduction into tools like awk, sort, grep and xargs. You can also come and chat about complex regex with other advanced computer scientists, if you feel like it.
+
+### [Workflow manager workshop](https://redgar598.github.io/EMBL_BTM_2019/workflows/)
+We will get familiar with the concept of workflow managers. Workflow managers have become popular in the bioinformatics community as they facilitate reproducible workflows. We will learn how to write small workflows using snakemake and make them reproducible and shareable using conda and singularity.
+
+### [Advanced Python](https://github.com/redgar598/EMBL_BTM_2019/tree/master/python_datascience)
+Everyone that used python before and will be using it again might be interested in: What else is there. We will look into best practice and advanced code structures such as classes and modules. We can also discuss useful packages for data scientists and how to manage different python environments (python 2 and 3)
+
