@@ -1,5 +1,5 @@
 # number of files to create
-n = 10
+n = 3
 
 # the first rule is defining for what will happen
 # its usually called all and the input
