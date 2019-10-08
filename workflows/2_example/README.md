@@ -70,7 +70,7 @@ In this rule we expect to find a genome and then we align a fastq file to create
 For this the shell command will be filled in with the variables
 and then executed.
 
-### Other eays to run code
+### Other ways to run code
 
 Besides using the shell to run commands, we can also call scripts or run 
 python code directly. See the Snakefile for examples.
