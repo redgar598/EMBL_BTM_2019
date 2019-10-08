@@ -14,7 +14,9 @@ rule all:
     input:
         expand("{data}/plot/tsne_{which}.png",
                 data = config['data'],
-                which = ['cleaned', 'cutup'])
+                which = ['cleaned', 'cutup']),
+        expand("{data}/stats/summary.csv",
+            data = config['data'])
 
 
 rule gunzip:
@@ -100,3 +102,15 @@ rule stats:
     output:
         "{data}/stats/{genome}.summary"
     script: "scripts/nucfreq.py"
+
+rule summarize_stats:
+    input:
+        expand("{{data}}/stats/{genome}.summary", 
+                genome = samples.genome)
+    output:
+        "{data}/stats/summary.csv"
+    shell:
+        """
+        echo "nucleotide,raw,cleaned,genome" | sed 's/,/\t/g'> {output}
+        cat {input} >> {output}
+        """
