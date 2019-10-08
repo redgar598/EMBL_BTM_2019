@@ -41,4 +41,4 @@ also use the `-s` parameter to pass a different filename to it.
 - `-n`: Dont run just calculate what we would run
 
 
-Lets move on to [example 2](../2_example/README.md)
+Lets move on to [example 2](../2_example/)

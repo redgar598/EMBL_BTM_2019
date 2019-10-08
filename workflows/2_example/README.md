@@ -82,4 +82,4 @@ python code directly. See the Snakefile for examples.
 - Execute it
 
 
-If done, lets move to [example 3](../3_fixme/README.md)
+If done, lets move to [example 3](../3_fixme/)
