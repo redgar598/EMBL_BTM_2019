@@ -1,13 +1,16 @@
 # Workflow manager workshop
 
 This repro is the bassis for the workshop. You should not need much more.
-Slides to not exist.
+
 
 ## Install and work along
 To run the examples in this workshop please install Snakemake (>= 5) 
-and also conda.
+and also conda. If you created the BTM enviorement, please load it with
 
-
+```
+conda activate BTM
+```
+Then you can **skip** all installation steps. Juhee
 
 ### Install Conda
 If you have not yet installed conda please install miniconda:
@@ -23,7 +26,6 @@ Once conda is installed you can install snakemake by running:
 conda install -c bioconda -c conda-forge snakemake
 ```
 
-
 ### Install pandas
 ```
 conda install -c anaconda pandas
@@ -37,11 +39,12 @@ conda install -c conda-forge singularity
 Or using your package manager (e.g. on Ubuntu apt).
 
 
+# Now lets get to the content
 ## How do we analyse data?
 
 If we have a NGS file `experiment_1.fastq` we often need multiple steps 
 to get a usable result. This will involve quality control
-alignment to a refernce, maybe peak or SNP calling. So this could look something like:
+alignment to a reference, removing contamiantion, maybe peak or SNP calling. So this could look something like:
 
 ```
 $ mkdir experiment1
@@ -58,7 +61,7 @@ $ demultiplexIt -i fastq/raw.fastq -o demultiplexed/...
 $ Rscript makemyplot.R
 ```
 
-Then often during a PhD or any long term project, another anlysis will be
+Then often during a PhD or any long term project, another analysis will be
 added or a step inbetween, because you forgot to add adapter trimming or 
 something similar.
 
@@ -76,7 +79,5 @@ They will also automatically be able to sent your jobs to a cluster once your
 analysis is to large for your laptop.
 
 
-
-
 # So how does it work?
-Find out in example1
+Find out in [example1](1_basicExample/README.md)
