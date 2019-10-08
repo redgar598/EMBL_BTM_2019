@@ -39,3 +39,6 @@ also use the `-s` parameter to pass a different filename to it.
 - `-k`: Continue with independent rules eventhough some might have failed
 - `-p`: print the executed shell statements
 - `-n`: Dont run just calculate what we would run
+
+
+Lets move on to [example 2](../2_example/README.md)
