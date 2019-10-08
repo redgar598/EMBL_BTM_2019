@@ -147,4 +147,13 @@ data$freq = sample(1:1000, 279, replace = F)
 ```
 
 
+<br/>
+<br/>
+<br/>
 
+### Additional Resources
+[Effective Visual Communication for the Quantitative Scientist](https://ascpt.onlinelibrary.wiley.com/doi/full/10.1002/psp4.12455)
+<br/>
+[ggplot cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
+<br/>
+[Points of View columns on data visualization](http://blogs.nature.com/methagora/2013/07/data-visualization-points-of-view.html)
