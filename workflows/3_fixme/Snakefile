@@ -15,7 +15,7 @@ rule all:
         expand("{data}/plot/tsne_{which}.png",
                 data = config['data'],
                 which = ['cleaned', 'cutup']),
-        expand("{data}/stats/summary.csv",
+        expand(???,
             data = config['data'])
 
 
@@ -33,7 +33,7 @@ rule cleanFasta:
     input:
         "{data}/genomes/{file}.fna"
     output:
-        "{data}/cleaned/{file}.fna"
+        ???
     shell:
         """
         python3 scripts/rename_multifasta_prefix.py \
@@ -84,12 +84,11 @@ rule mergeData:
         merged = pd.concat(dfs)
         merged.to_csv(output[0], index = False)
 
-
 rule plot:
     input:
-        "{data}/merged/counts_{which}.csv"
+        ???
     output:
-        "{data}/plot/tsne_{which}.png"
+        ???
     conda:
         "envs/python3.yaml"
     script:
@@ -105,8 +104,7 @@ rule stats:
 
 rule summarize_stats:
     input:
-        expand("{{data}}/stats/{genome}.summary", 
-                genome = samples.genome)
+        ???
     output:
         "{data}/stats/summary.csv"
     shell:
