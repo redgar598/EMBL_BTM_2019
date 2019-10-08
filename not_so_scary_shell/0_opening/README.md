@@ -82,7 +82,7 @@ man [...]
 Man, short for manual, will show you the help for any command.
 
 
-
+For now lets move on with some [examples](../1_example/)
 
 
 

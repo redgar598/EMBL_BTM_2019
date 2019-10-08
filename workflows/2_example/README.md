@@ -12,7 +12,6 @@ snakemake will try to create using the rules below.
 This could look like this:
 
 ```python3
-
 rule all:
     input:
         bam  = "data/bams/alignment.bam",
@@ -73,7 +72,7 @@ and then executed.
 ### Other ways to run code
 
 Besides using the shell to run commands, we can also call scripts or run 
-python code directly. See the Snakefile for examples.
+python code directly. See the [Snakefile](Snakefile) for examples.
 
 
 ## Task
