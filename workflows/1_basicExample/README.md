@@ -10,8 +10,7 @@ Of course there are many workflow manager out there. There are for example
 
 But as this is an introduction we focus on Snakemake
 
-
-
+[![asciicast](https://asciinema.org/a/Sk62tigf5LjD9sj2cdQQLq6Xy.svg)](https://asciinema.org/a/Sk62tigf5LjD9sj2cdQQLq6Xy)
 ## Running workflows
 Running a workflow is simple. If you cloned this repro just go into this folder and
 run
