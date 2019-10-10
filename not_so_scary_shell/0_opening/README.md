@@ -4,7 +4,7 @@ In the 70ths opening the shell was not something you did, but something that hap
 Now we just have to search for "shell" or on Mac "Terminal" and a black window will
 open for us.
 
-[animation][../img/animation.gif]
+![animation](../img/animation.gif)
 
 If you want go ahead and make the shell full screen. What can you see?
 
