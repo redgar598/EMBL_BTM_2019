@@ -42,3 +42,7 @@ We will get familiar with the concept of workflow managers. Workflow managers ha
 ### [Advanced Python](https://github.com/redgar598/EMBL_BTM_2019/tree/master/python_datascience)
 Everyone that used python before and will be using it again might be interested in: What else is there. We will look into best practice and advanced code structures such as classes and modules. We can also discuss useful packages for data scientists and how to manage different python environments (python 2 and 3)
 
+### [Beginner Machine Learning](https://github.com/redgar598/EMBL_BTM_2019/tree/master/beginner_machine_learning)
+This session will begin with an introduction to the concept of machine learning and how a basic machine learning pipeline looks like. In this practical, we will interactively solve a binary classification problem on 2D data. This will include loading the data in a jupyter notebook, visualizing the data in 2D space to identify outliers/missing values, if any, and getting an intuition of the decision boundary separating the two classes. Final step would be to train a classifier and then test its performance. Basic knowledge of Python or attending the Beginner Python course recommended.
+
+
