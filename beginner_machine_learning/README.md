@@ -1,6 +1,6 @@
 # Beginner Machine Learning
 
-This course introduces basic machine learning terms and steps using pandas, sklearn
+This course introduces basic machine learning terms and steps using pandas and sklearn.
 
 ## Useful resources
 
