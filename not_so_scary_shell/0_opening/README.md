@@ -4,7 +4,7 @@ In the 70ths opening the shell was not something you did, but something that hap
 Now we just have to search for "shell" or on Mac "Terminal" and a black window will
 open for us.
 
-TODO: [Image of MAc terminal!]
+[animation][../img/animation.gif]
 
 If you want go ahead and make the shell full screen. What can you see?
 
@@ -47,10 +47,14 @@ What do you see?
 
 Its your files. Right? 
 
-The terminal really is a simple file manager. We can create files:
+The terminal really is a simple file manager. We can create folders:
 
 ```
-touch new_file
+mkdir test
+# and go into the folder
+cd test
+# and then list the content
+ls
 ```
 
 Write into files
@@ -69,8 +73,10 @@ cat new_file
 
 What just happened?
 
+
+
 ## In case of questions
-The internet is your friend. All questions have been asked. Just read up and you'll be fine.
+The internet is your friend. All questions have been asked. Just search the web and you'll be fine.
 
 If you want to find out yourself or have a very specialized question:
 
