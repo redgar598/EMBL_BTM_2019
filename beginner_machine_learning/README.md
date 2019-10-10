@@ -1,6 +1,6 @@
 # Beginner Machine Learning
 
-This course introduces basic machine learning terms and steps using [pandas](https://pandas.pydata.org) and [scikit-learn](https://scikit-learn.org/stable/index.html) libraries.
+This course introduces basic machine learning terms and steps using open-source [pandas](https://pandas.pydata.org) and [scikit-learn](https://scikit-learn.org/stable/index.html) libraries in python.
 
 ## Useful resources
 
