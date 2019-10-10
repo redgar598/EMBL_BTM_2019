@@ -4,7 +4,7 @@ This course introduces basic machine learning terms and steps using open-source 
 
 ## Useful resources
 
-I find that the libraries, packages and functions in this field are extensively documented and there is a lot of help/already answered questions available on [Stack Overflow](https://stackoverflow.com) to help you get started. 
+I find that the libraries, packages and functions in this field are extensively documented and there is a lot of help/already answered questions available on [Stack Overflow](https://stackoverflow.com) to get you started. 
 
 Some of the resources that I find particularly useful are:
 1. Pattern Recognition and Machine Learning by Christopher M. Bishop
