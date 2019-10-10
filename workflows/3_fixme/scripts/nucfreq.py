@@ -27,10 +27,10 @@ with open(snakemake.output[0], "w") as f:
         # add missing keys
         if k not in cleaned.keys():
             cleaned[k] = 0
-        s = f"{k}\t{raw[k]}\t{cleaned[k]}\n"
+        s = f"{k}\t{raw[k]}\t{cleaned[k]}\t{snakemake.wildcards['genome']}\n"
         f.write(s)
     # write sum as well
     raw_sum = sum([v for k,v in raw.items()])
     cleaned_sum = sum([v for k,v in cleaned.items()])
-    s = f"sum\t{raw_sum}\t{cleaned_sum}\n"
+    s = f"sum\t{raw_sum}\t{cleaned_sum}\t{snakemake.wildcards['genome']}\n"
     f.write(s)

@@ -10,7 +10,7 @@ How can you copy paste all the files into one large table?
 Go into the folder task_1 and merge all files ending with `.csv` into one table.
 
 <details>
-  <summary>Soltution (spoiler)</summary>
+  <summary>Solution (spoiler)</summary>
   Simple solution:
 
   ```
@@ -51,9 +51,7 @@ How do you figure out which folders take up most space and what to delete?
 Use google to help you (unix find folder size)
 
 <details>
-  <summary>
-    Solution (spoiler)
-  </summary>
+  <summary>Solution (spoiler)</summary>
   We can let the shell count the files and the size of them in byte by using the command
   `du`
 

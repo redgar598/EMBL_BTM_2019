@@ -34,7 +34,7 @@ maybe a webbrowser, like downloading all pictures from an article, or copying da
 Once these tasks require more then a few hundred clicks, you will want to have 
 an automated way of doing them. Thats where the shell comes in.
 
-[Lets start](steps/1_opening.md)
+[Lets start](0_opening)
 
 
 Simple reading: https://zellwk.com/blog/fear-of-command-line/
