@@ -52,7 +52,7 @@ ___
 <br/><br/>
 
 # BTM Data Visualization Part 2
-This session will be a workshop with several examples of complex plots presented. The goal will be to recreate these plots in R and ggplot. The aim is that thorough recreating these plots we can explore the many elements available to make complex plots in R without adjustment in a illustrator software. 
+This session will be a workshop with several examples of complex plots presented. The goal will be to recreate these plots in R and ggplot. The aim is that, through recreating these plots, we can explore the many elements available to make complex plots in R without adjustment in a illustrator software. 
 
 Though you can develop your plots using any packages you like. I recommend the installation of these
 ```
