@@ -10,19 +10,19 @@ conda activate BTM
 ```
 Then you can hopefully **skip** all the installation steps.
 
-## Install git
+### Install git
 
 ```
 conda install -c conda-forge git
 ```
 
-## Install seaborn (v 0.9.0)
+### Install seaborn (v 0.9.0)
 
 ```
 conda install -c anaconda seaborn
 ```
 
-## Install mlxtend
+### Install mlxtend
 
 ```
 conda install -c conda-forge mlxtend
