@@ -111,7 +111,8 @@ hpv_status <- ggplot(data, aes(x=pt_id, y = hpv)) + geom_bar(fill="#bf1e15",stat
         panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + ylab("HPV\nStatus")
 
 site_status <- ggplot(data, aes(x=pt_id, y=site_known, fill = site)) +     geom_bar(stat="identity")+
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+ scale_fill_brewer(palette = "Spectral", name="Sample Site")+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+ 
+  scale_fill_brewer(palette = "Spectral", name="Sample Site")+
   xlab("Patient ID")+ylab("Sample\nSite")
 
 
@@ -146,4 +147,43 @@ gD$widths[2:5] <- as.list(maxWidth)
 # Lay out plots and legend
 p = grid.arrange(arrangeGrob(gA,gB,gC,gD, heights=c(0.5,0.1,0.1,0.2)),
                  leg, ncol=2, widths=c(0.8,0.2))
+
+
+
+###########################
+## EXAMPLE 3
+###########################
+## define colors for clustering labels
+sampleInfo$col_devstage<-as.factor(sampleInfo$devStage)
+colors<-c("#440154FF", "#31688EFF", "#21908CFF", "#35B779FF","#B8DE29FF")
+
+levels(sampleInfo$col_devstage)<-colors
+sampleInfo$col_devstage<-as.character(sampleInfo$col_devstage)
+
+# make the color bar at the bottom
+dend <- as.dendrogram(hc)
+rectanle<-ggplot()+geom_rect(aes(xmin=1:nrow(sampleInfo), xmax=1:nrow(sampleInfo)+1, ymin=0, ymax=1, 
+                                 fill=sampleInfo$devStage[match(labels(dend),sampleInfo$sidChar)]), color="black", alpha=0.5) +
+  theme_bw()+scale_fill_manual(values=colors, name="Developmental\nStage")+theme(legend.position = c(1.07, 6),
+                                       axis.title=element_blank(),
+                                       axis.text=element_blank(),
+                                       axis.ticks=element_blank(),
+                                       panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+                                       panel.background = element_blank(), axis.line = element_blank(),
+                                       panel.border = element_blank())+
+  geom_vline(xintercept=17, size=1)+geom_vline(xintercept=24, size=1)+
+  geom_vline(xintercept=34, size=1)+ylim(-0.5,1.5)
+
+
+
+par(mfcol = c(1,1), mar=c(5,6,3,6), oma=c(0,0,0,0))
+plot.new()
+
+# plot dendogram
+myplclust(hc, labels=sampleInfo$sidNum, lab.col=sampleInfo$col_devstage, cex=1.2, main="")
+
+# combine all elements
+vp <- viewport(height = unit(0.1,"npc"), width=unit(0.77, "npc"), 
+               just = c("center","top"), y = 0.14, x = 0.5)
+print(rectanle, vp = vp)
 
