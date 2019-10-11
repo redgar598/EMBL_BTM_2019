@@ -11,10 +11,8 @@ In the BTM 2019 current predocs prepare modules and lectures to help the new pre
 > conda install -c anaconda git 
 
 #### Options to use R Studio
-1. With conda
-> conda install -c r rstudio 
-2. Download [R Studio](https://www.rstudio.com/products/rstudio/download/#download) to your local machine 
-3. Alternatively you can run an Rstudio session in the [cloud](https://rstudio.cloud/) by signing up for an account
+1. Download [R Studio](https://www.rstudio.com/products/rstudio/download/#download) to your local machine 
+2. Alternatively you can run an Rstudio session in the [cloud](https://rstudio.cloud/) by signing up for an account
 
 ___
 
