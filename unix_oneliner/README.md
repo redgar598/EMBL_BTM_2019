@@ -3,7 +3,17 @@
 Oneliner are cool. As a datascientist you will find them a lot.
 
 In this session you will only need a terminal and together we will 
-look at a few complex one line commands and understand what they do.
+discover pipes and redirects.
+
+
+## Doing one thing well
+In UNIX often we find tools that do one thing, but they do it well. This principle is embedded in the phylosophy of UNIX and is called KISS "Keep it simple, stupid".
+
+Thus often we need multiple steps to achive a complex goal. 
+
+### Example time
+Imagine you have 
+
 
 
 # Intro to UNIX tools

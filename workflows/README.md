@@ -80,4 +80,4 @@ analysis is to large for your laptop.
 
 
 # So how does it work?
-Find out in [example1](1_basicExample/README.md)
+Find out in [example1](1_basicExample)
