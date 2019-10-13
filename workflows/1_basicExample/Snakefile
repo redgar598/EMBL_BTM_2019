@@ -41,13 +41,9 @@ rule capitalizeFile:
     # and this is the output we'll create
     output:
         "data/capitalized/{filenumber}.txt"
-    # This is a "simple" sed expression to capitalize text
-    # Note: Patterns used in these code blocks need to escape {} and \
-    shell:
-        """
-        sed -e 's/\(.*\)/\\U\\1/' {input} > {output}
-        """
+    run:
+        with open(input[0]) as inputfile, open(output[0], "w") as outputfile:
+            for line in inputfile:
+                outputfile.write(line.upper())
 
 # Run this script by calling snakemake
-
-
