@@ -25,11 +25,7 @@ Look at the output and look at the pipeline. Can you understand whats happening?
 
 **We will go trough the example together**
 
-<object data="https://raw.githubusercontent.com/redgar598/EMBL_BTM_2019/paul/workflows/1_basicExample/rulegraph.pdf" type="application/pdf" width="700px" height="700px">
-   <embed src="https://raw.githubusercontent.com/redgar598/EMBL_BTM_2019/paul/workflows/1_basicExample/rulegraph.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://raw.githubusercontent.com/redgar598/EMBL_BTM_2019/paul/workflows/1_basicExample/rulegraph.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+![Snakemake graph](rulegraph.png)
 
 ## Snakemake basics
 
