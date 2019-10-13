@@ -10,7 +10,6 @@ Of course there are many workflow manager out there. There are for example
 
 But as this is an introduction we focus on Snakemake
 
-<script id="asciicast-Sk62tigf5LjD9sj2cdQQLq6Xy" src="https://asciinema.org/a/Sk62tigf5LjD9sj2cdQQLq6Xy.js?rows=20" async></script>
 ## Running workflows
 Running a workflow is simple. If you cloned this repro just go into this folder and
 run
@@ -26,7 +25,11 @@ Look at the output and look at the pipeline. Can you understand whats happening?
 
 **We will go trough the example together**
 
-
+<object data="https://raw.githubusercontent.com/redgar598/EMBL_BTM_2019/paul/workflows/1_basicExample/rulegraph.pdf" type="application/pdf" width="700px" height="700px">
+   <embed src="https://raw.githubusercontent.com/redgar598/EMBL_BTM_2019/paul/workflows/1_basicExample/rulegraph.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://raw.githubusercontent.com/redgar598/EMBL_BTM_2019/paul/workflows/1_basicExample/rulegraph.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
 ## Snakemake basics
 

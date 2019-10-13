@@ -52,15 +52,16 @@ ___
 <br/><br/>
 
 # BTM Data Visualization Part 2
-This session will be a workshop with several examples of complex plots presented. The goal will be to recreate these plots in R and ggplot. The aim is that thorough recreating these plots we can explore the many elements available to make complex plots in R without adjustment in a illustrator software. 
+This session will be a workshop with several examples of complex plots presented. The goal will be to recreate these plots in R and ggplot. The aim is that, through recreating these plots, we can explore the many elements available to make complex plots in R without adjustment in a illustrator software. 
 
-Though you can develop your plots using any packages you like. I recommend the installation fo these
+Though you can develop your plots using any packages you like. I recommend the installation of these
 ```
 install.packages(ggplot2)
 install.packages(reshape2)
 install.packages(RColorBrewer)
 install.packages(scales)
 install.packages(gridExtra)
+install.packages(rafalib)
 ```
 
 or through conda
@@ -146,6 +147,27 @@ data$freq = sample(1:1000, 279, replace = F)
 
 ```
 
+### Example 4
+The following example is for visualizing clustering data with color. The provided code loads data and does the clustering to generate the dendogram. I recommend *myplclust* from the rafalib package for coloring the clustering labels by developmental stage.
+
+<p align="left">
+  <img src="figures/clustering_with_color.png" width="500" height="300">
+</p>
+
+```
+library(rafalib)
+library(ggplot2)
+library(grid)
+library(gridExtra)
+
+#load data
+geneExp <- read.table("data_visualization/data/GSE4051_data.tsv", stringsAsFactors = FALSE, sep = "\t", header=T)
+sampleInfo <- read.table("data_visualization/data/GSE4051_design.tsv", stringsAsFactors = FALSE, sep = "\t", header=T)
+
+## cluster samples based on gene expression
+d <- dist(t(geneExp))
+hc <- hclust(d, method = "complete") 
+```
 
 
 <br/>

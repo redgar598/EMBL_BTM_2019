@@ -34,15 +34,16 @@ probes = rownames(variable_gene_expression)
 modProbes = probes
 
 cyt = exportNetworkToCytoscape(TOM,
-                               edgeFile = "../network_visualization/data/gene_coexpression_edges.txt",
-                               nodeFile = "../network_visualization/data/gene_coexpression_nodes.txt",
+                               edgeFile = "network_visualization/data/gene_coexpression_edges.txt",
+                               nodeFile = "network_visualization/data/gene_coexpression_nodes.txt",
                                weighted = TRUE,
                                threshold = 0.02,
                                nodeNames = modProbes,
                                nodeAttr=moduleColors)
 
-
-
+annotation<-read.csv("network_visualization/data/Affy_430_2.0_mgi.rpt", skip=4, sep="\t")
+annotation<-annotation[which(annotation$Probeset.ID%in%modProbes),]
+write.csv(annotation, file="network_visualization/data/Affy_430_2.0_mgi_filtered.csv", row.names = F)
 
 #### PCA for heat scree
 geneExp <- read.table("data/GSE4051_data.tsv", stringsAsFactors = FALSE, sep = "\t", header=T)

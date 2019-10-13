@@ -11,10 +11,8 @@ In the BTM 2019 current predocs prepare modules and lectures to help the new pre
 > conda install -c anaconda git 
 
 #### Options to use R Studio
-1. With conda
-> conda install -c r rstudio 
-2. Download [R Studio](https://www.rstudio.com/products/rstudio/download/#download) to your local machine 
-3. Alternatively you can run an Rstudio session in the [cloud](https://rstudio.cloud/) by signing up for an account
+1. Download [R Studio](https://www.rstudio.com/products/rstudio/download/#download) to your local machine 
+2. Alternatively you can run an Rstudio session in the [cloud](https://rstudio.cloud/) by signing up for an account
 
 ___
 
@@ -26,7 +24,7 @@ ___
 Here we will run through some basic ggplot examples in R. Using gene expression data across development in WT and mutant lines, to understand the utility of the ggplot system and inform about resources to go to for help in future plotting endeavours. 
 
 ### [Network Visualization](https://redgar598.github.io/EMBL_BTM_2019/network_visualization/)
-Here we look at how to visualize networks in Cytoscape. Will we work through the basic file format for cytoscape, how to import data and how to display data on both the nodes and edges of a built network. Will give workshop examples on gene expression, cell connectivity data and connection of authors on publications. Networks will be built elsewhere this will just be visualizing how networks are built is not covered.
+Here we look at how to visualize networks in Cytoscape. Will we work through the basic file format for cytoscape, how to import data and how to display data on both the nodes and edges of a built network. Will give workshop examples on gene expression, cell connectivity data and connection of authors on publications. Networks will be built elsewhere, this will just be visualizing, how networks are built is not covered.
 
 
 ### [Not So Scary Shell](https://redgar598.github.io/EMBL_BTM_2019/not_so_scary_shell/)
@@ -41,4 +39,8 @@ We will get familiar with the concept of workflow managers. Workflow managers ha
 
 ### [Advanced Python](https://github.com/redgar598/EMBL_BTM_2019/tree/master/python_datascience)
 Everyone that used python before and will be using it again might be interested in: What else is there. We will look into best practice and advanced code structures such as classes and modules. We can also discuss useful packages for data scientists and how to manage different python environments (python 2 and 3)
+
+### [Beginner Machine Learning](https://github.com/redgar598/EMBL_BTM_2019/tree/master/beginner_machine_learning)
+This session will begin with an introduction to the concept of machine learning and how a basic machine learning pipeline looks like. In this practical, we will interactively solve a binary classification problem on 2D data. This will include loading the data in a jupyter notebook, visualizing the data in 2D space to identify outliers/missing values, if any, and getting an intuition of the decision boundary separating the two classes. Final step would be to train a classifier and then test its performance. Basic knowledge of Python or attending the Beginner Python course recommended.
+
 
