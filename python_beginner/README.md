@@ -10,7 +10,7 @@ To run the examples in this workshop please install [Anaconda](https://www.anaco
 conda install -c conda-forge git
 ```
 
-## Additional excercises
+## Additional exercises
 
 If you have already familiarized yourself with the concepts above, we recommend you to go through this [NumPy tutorial](https://sites.engineering.ucsb.edu/~shell/che210d/numpy.pdf). [NumPy](https://numpy.org) is a powerful package for scientific computing designed to make your life so much easier, for example, you could do matrix multiplications without using `for-loops`!!
 
