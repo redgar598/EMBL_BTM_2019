@@ -37,6 +37,9 @@ In this session predocs will get familiar with UNIX one-liners. It is important 
 ### [Workflow manager workshop](https://redgar598.github.io/EMBL_BTM_2019/workflows/)
 We will get familiar with the concept of workflow managers. Workflow managers have become popular in the bioinformatics community as they facilitate reproducible workflows. We will learn how to write small workflows using snakemake and make them reproducible and shareable using conda and singularity.
 
+### [Beginner Python](https://github.com/redgar598/EMBL_BTM_2019/tree/master/python_beginner)
+We will give a short introduction into coding using python as an example. Python is the ideal pseudo code language and will help you to understand what makes coding so attractive. We will learn about jupyter-lab, variables and pandas. All the basics to get you started with your python project.
+
 ### [Advanced Python](https://github.com/redgar598/EMBL_BTM_2019/tree/master/python_datascience)
 Everyone that used python before and will be using it again might be interested in: What else is there. We will look into best practice and advanced code structures such as classes and modules. We can also discuss useful packages for data scientists and how to manage different python environments (python 2 and 3)
 
