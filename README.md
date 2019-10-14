@@ -46,4 +46,8 @@ Everyone that used python before and will be using it again might be interested 
 ### [Beginner Machine Learning](https://github.com/redgar598/EMBL_BTM_2019/tree/master/beginner_machine_learning)
 This session will begin with an introduction to the concept of machine learning and how a basic machine learning pipeline looks like. In this practical, we will interactively solve a binary classification problem on 2D data. This will include loading the data in a jupyter notebook, visualizing the data in 2D space to identify outliers/missing values, if any, and getting an intuition of the decision boundary separating the two classes. Final step would be to train a classifier and then test its performance. Basic knowledge of Python or attending the Beginner Python course recommended.
 
+### [Advanced Machine Learning](https://github.com/redgar598/EMBL_BTM_2019/tree/master/advanced_machine_learning) 
+Firstly, we will have a short introduction into the main concepts of Machine Learning and explained how and why it all works. During the practical part we will guide you through writing a data loader and a training loop, visualizing and evaluating the model performance. The minimal requirements are basic Python skills: you should be comfortable with writing functions, using if-statements and for-loops. 
+
+
 
