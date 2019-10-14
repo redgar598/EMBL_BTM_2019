@@ -16,4 +16,4 @@ If you have already familiarized yourself with the concepts above, we recommend 
 
 ## Useful resources
 
-At the end of the `beginner_python.ipynb` notebook, additional resources have been listed for you to explore. 
+At the end of the `beginner_python.ipynb` notebook, additional resources have been listed. 
