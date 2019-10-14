@@ -34,7 +34,7 @@ I find that the libraries, packages and functions in this field are extensively 
 
 Some of the resources that helped me to understand the ML concepts are:
 1. [EPFL Machine Learning Course CS-433 by Martin Jaggi and Ruediger Urbanke](https://github.com/epfml/ML_course) on GitHub
-2. [Pattern Recognition and Machine Learning by Christopher M. Bishop] (http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
+2. [Pattern Recognition and Machine Learning by Christopher M. Bishop](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
 3. [Machine Learning course by Andrew Ng](https://www.coursera.org/learn/machine-learning) on Coursera
 4. [Machine Learning videos by Josh Starmer](https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) on Youtube 
 
