@@ -32,10 +32,11 @@ conda install -c conda-forge mlxtend
 
 I find that the libraries, packages and functions in this field are extensively documented and there is a lot of help/already answered questions available on [Stack Overflow](https://stackoverflow.com) to get you started. 
 
-Some of the resources that I find particularly useful are:
-1. Pattern Recognition and Machine Learning by Christopher M. Bishop
-2. [Machine Learning course by Andrew Ng on Coursera](https://www.coursera.org/learn/machine-learning)
-3. [Machine Learning videos by Josh Starmer on Youtube](https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF)
+Some of the resources that helped me to understand the ML concepts are:
+1. [EPFL Machine Learning Course CS-433](https://github.com/epfml/ML_course) by Martin Jaggi and Ruediger Urbanke on GitHub
+2. [Pattern Recognition and Machine Learning](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf) by Christopher M. Bishop
+3. [Machine Learning course](https://www.coursera.org/learn/machine-learning) by Andrew Ng on Coursera
+4. [Machine Learning videos](https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) by Josh Starmer on Youtube 
 
 Feel free to add more suggestions.
 
