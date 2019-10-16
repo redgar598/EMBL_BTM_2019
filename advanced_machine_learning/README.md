@@ -16,6 +16,7 @@ To install the packages reqired for this tutorial, please, run
 conda install -c conda-forge -c pytorch pytorch torchvision pillow scipy tqdm
 ```
 
+Afterwards, please, download the nuclei data [here](https://drive.google.com/file/d/1tyI7ig2obOxAdEnKBrUXFD7uZQX9tRKD/view?usp=sharing). You would need to unzip the data in a directory you want to work in.
 ## Useful links
 1. [Machine Learning course](https://www.coursera.org/learn/machine-learning) by Andrew Ng on Coursera
 2. [Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/syllabus.html) - a Stanford course
