@@ -25,7 +25,7 @@ Look at the output and look at the pipeline. Can you understand whats happening?
 
 **We will go trough the example together**
 
-![Snakemake graph](rulegraph.png | width=150)
+![Snakemake graph](rulegraph.png | width=150px)
 
 ## Snakemake basics
 
