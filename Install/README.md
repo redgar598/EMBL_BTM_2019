@@ -2,7 +2,7 @@
 
 ## Conda or mini-conda
 You will need conda (version 4.7.12) for most sessions, if you do not have it installed yet you
-cat download it from here:
+can download it from here:
 
 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 
@@ -10,6 +10,12 @@ Miniconda is a small version, which has no nice user interface, but is what most
 people use. But you can also use Anaconda but we can give less ehlp there:
 
 [https://www.anaconda.com/distribution/#download-section](https://www.anaconda.com/distribution/#download-section)
+
+If you already have conda installed, please make sure that you have the latest version (use: ``` conda --version ```) otherwise upgrade it using 
+
+```
+conda upgrade -n base conda
+```
 
 ## Install the enviorements:
 
