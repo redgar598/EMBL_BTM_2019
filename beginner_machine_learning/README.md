@@ -12,7 +12,7 @@ Then you can hopefully **skip** all the installation steps.
 
 ### Install Anaconda
 
-Please use the instructions here: [Anaconda](https://www.anaconda.com/distribution/)
+Please follow the instructions here: [Anaconda](https://www.anaconda.com/distribution/)
 
 ### Install git
 
