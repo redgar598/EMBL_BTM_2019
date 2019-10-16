@@ -7,6 +7,7 @@ Here are some examples of the images we will be working with:
 ![alt text](https://github.com/redgar598/EMBL_BTM_2019/blob/master/advanced_machine_learning/imgs/pic1.png "Image 1")
 ![alt text](https://github.com/redgar598/EMBL_BTM_2019/blob/master/advanced_machine_learning/imgs/pic2.png "Image 2")
 ![alt text](https://github.com/redgar598/EMBL_BTM_2019/blob/master/advanced_machine_learning/imgs/pic3.png "Image 3")
+![alt text](https://github.com/redgar598/EMBL_BTM_2019/blob/master/advanced_machine_learning/imgs/pic4.png "Image 4")
 
 ## Requirements
 You are expected to have conda installed and the BTM environment activated.
