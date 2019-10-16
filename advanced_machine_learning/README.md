@@ -9,9 +9,14 @@ Here are some examples of the images we will be working with:
 ![alt text](https://github.com/redgar598/EMBL_BTM_2019/blob/master/advanced_machine_learning/imgs/pic3.png "Image 3")
 ![alt text](https://github.com/redgar598/EMBL_BTM_2019/blob/master/advanced_machine_learning/imgs/pic4.png "Image 4")
 
-## Requirements
-You are expected to have conda installed and the BTM environment activated.
-To install the packages reqired for this tutorial, please, run
+## Install and work along
+To run the examples in this workshop please follow the instructions [here](https://github.com/redgar598/EMBL_BTM_2019/tree/master/Install). If you created the BTM environment, please load it with
+
+```
+conda activate BTM
+```
+You are expected to have conda installed and the BTM environment activated. 
+To install additional packages required for this tutorial, please, run
 ```
 conda install -c conda-forge -c pytorch pytorch torchvision pillow scipy tqdm
 ```
