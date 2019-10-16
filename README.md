@@ -8,7 +8,7 @@ In the BTM 2019 current predocs prepare modules and lectures to help the new pre
 
 For the most easy install, just check the instructions here:
 
-[install/](install/)
+[install/](Install/)
 
 It will (hopefully just work and install all you might ever want)
 
