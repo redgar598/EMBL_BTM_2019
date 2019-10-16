@@ -3,12 +3,16 @@
 This course introduces basic machine learning terms and steps using open-source [pandas](https://pandas.pydata.org) and [scikit-learn](https://scikit-learn.org/stable/index.html) libraries in python.
 
 ## Install and work along
-To run the examples in this workshop please install [Anaconda](https://www.anaconda.com/distribution/). If you created the BTM environment, please load it with
+To run the examples in this workshop please follow the instructions [here](https://github.com/redgar598/EMBL_BTM_2019/tree/master/Install). If you created the BTM environment, please load it with
 
 ```
 conda activate BTM
 ```
 Then you can hopefully **skip** all the installation steps.
+
+### Install Anaconda
+
+Please use the instructions here: [Anaconda](https://www.anaconda.com/distribution/)
 
 ### Install git
 
