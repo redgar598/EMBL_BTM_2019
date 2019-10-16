@@ -59,7 +59,7 @@ rule mergeData:
     output:
         "{data}/merged/counts.csv"
     run:
-        import pandas
+        import pandas as pd
         import os
         dfs = []
         for path in input.wordcounts:
