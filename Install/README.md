@@ -1,7 +1,7 @@
 # Install software for the BTM
 
 ## Conda or mini-conda
-You will need conda for most sessions, if you do not have it installed yet you
+You will need conda (version 4.7.12) for most sessions, if you do not have it installed yet you
 cat download it from here:
 
 [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
