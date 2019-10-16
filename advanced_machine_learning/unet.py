@@ -7,6 +7,7 @@ class UNetBlock(nn.Module):
     def __init__(self, in_dim, out_dim):
         super(UNetBlock, self).__init__()
         self.conv1 = nn.Conv2d(in_dim, out_dim, kernel_size=3, padding=1)
+        self.norm1 = nn.BatchNorm2d(out_dim)
         self.conv2 = nn.Conv2d(out_dim, out_dim, kernel_size=3, padding=1)
         self.norm2 = nn.BatchNorm2d(out_dim)
         self.activation = nn.ReLU()
