@@ -15,4 +15,10 @@ To install the packages reqired for this tutorial, please, run
 ```
 conda install -c conda-forge -c pytorch pytorch torchvision pillow scipy tqdm
 ```
-  
+
+## Useful links
+1. [Machine Learning course](https://www.coursera.org/learn/machine-learning) by Andrew Ng on Coursera
+2. [Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/syllabus.html) - a Stanford course
+3. [PyTorch Tutorials](https://pytorch.org/tutorials/) - Getting Started Tutorials for Image and Text processing
+4. [UNet](https://towardsdatascience.com/u-net-b229b32b4a71) - The Intuition Behind UNet
+5. [Focal and Dice Loss](https://becominghuman.ai/investigating-focal-and-dice-loss-for-the-kaggle-2018-data-science-bowl-65fb9af4f36c) - Investigating Focal and Dice Loss for the Kaggle 2018 Data Science Bowl   
