@@ -3,6 +3,15 @@
 In the BTM 2019 current predocs prepare modules and lectures to help the new predocs to get started with the predoc course and the rest of their PhD at EMBL.
 
 ## Recommended Software
+
+### Use our prepackaged environments:
+
+For the most easy install, just check the instructions here:
+
+[install/](install/)
+
+It will (hopefully just work and install all you might ever want)
+
 ### Anaconda
 - Most software we will use can be easily installed together with [Anaconda](https://www.anaconda.com/distribution/)
 - Once you have Anacaonda, then install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) using conda 
