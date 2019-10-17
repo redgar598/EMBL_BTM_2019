@@ -9,8 +9,8 @@ In order to follow along with this session you will need R (ideally R studio) wi
 #### Required Packages
 Whichever version you use you will need to install some key packages. So run these lines first. 
 ```
-install.packages(ggplot2)
-install.packages(reshape2)
+install.packages("ggplot2")
+install.packages("reshape2")
 ```
 
 or with conda
