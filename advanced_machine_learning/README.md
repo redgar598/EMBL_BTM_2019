@@ -25,7 +25,7 @@ conda install -c anaconda git
 
 2. Once you are done with the steps above, install additional packages required for this tutorial using
 ```
-conda install -c conda-forge -c pytorch pytorch torchvision pillow scipy tqdm
+conda install -c conda-forge -c pytorch pytorch=1.3.0 torchvision=0.2.1 pillow=6.2.0 scipy tqdm
 ```
 
 Afterwards, please, download the nuclei data [here](https://drive.google.com/file/d/1tyI7ig2obOxAdEnKBrUXFD7uZQX9tRKD/view?usp=sharing). You would need to unzip the data in a directory you want to work in.
