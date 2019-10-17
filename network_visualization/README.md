@@ -17,7 +17,13 @@ We will walk through an example together then you are free to work through one e
 - Authorship network
 - Affinity purification-mass spectrometry 
 
-
+### Data for Building Networks
+- Set up with git up? clone the BTM repo
+```
+git clone https://github.com/redgar598/EMBL_BTM_2019.git
+```
+- Want everything but don't have git? Download [this](https://github.com/redgar598/EMBL_BTM_2019/archive/master.zip)
+- Collect the data files individually [here](https://github.com/redgar598/EMBL_BTM_2019/tree/master/network_visualization/data) individually
 
 ___
 

@@ -3,6 +3,15 @@
 In the BTM 2019 current predocs prepare modules and lectures to help the new predocs to get started with the predoc course and the rest of their PhD at EMBL.
 
 ## Recommended Software
+
+### Use our prepackaged environments:
+
+For the most easy install, just check the instructions here:
+
+[install/](Install/)
+
+It will (hopefully just work and install all you might ever want)
+
 ### Anaconda
 - Most software we will use can be easily installed together with [Anaconda](https://www.anaconda.com/distribution/)
 - Once you have Anacaonda, then install [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) using conda 
@@ -37,10 +46,17 @@ In this session predocs will get familiar with UNIX one-liners. It is important 
 ### [Workflow manager workshop](https://redgar598.github.io/EMBL_BTM_2019/workflows/)
 We will get familiar with the concept of workflow managers. Workflow managers have become popular in the bioinformatics community as they facilitate reproducible workflows. We will learn how to write small workflows using snakemake and make them reproducible and shareable using conda and singularity.
 
+### [Beginner Python](https://github.com/redgar598/EMBL_BTM_2019/tree/master/python_beginner)
+We will give a short introduction into coding using python as an example. Python is the ideal pseudo code language and will help you to understand what makes coding so attractive. We will learn about jupyter-lab, variables, data-types and all the basics to get you started with your python project.
+
 ### [Advanced Python](https://github.com/redgar598/EMBL_BTM_2019/tree/master/python_datascience)
 Everyone that used python before and will be using it again might be interested in: What else is there. We will look into best practice and advanced code structures such as classes and modules. We can also discuss useful packages for data scientists and how to manage different python environments (python 2 and 3)
 
 ### [Beginner Machine Learning](https://github.com/redgar598/EMBL_BTM_2019/tree/master/beginner_machine_learning)
 This session will begin with an introduction to the concept of machine learning and how a basic machine learning pipeline looks like. In this practical, we will interactively solve a binary classification problem on 2D data. This will include loading the data in a jupyter notebook, visualizing the data in 2D space to identify outliers/missing values, if any, and getting an intuition of the decision boundary separating the two classes. Final step would be to train a classifier and then test its performance. Basic knowledge of Python or attending the Beginner Python course recommended.
+
+### [Advanced Machine Learning](https://github.com/redgar598/EMBL_BTM_2019/tree/master/advanced_machine_learning) 
+Firstly, we will have a short introduction into the main concepts of Machine Learning and explained how and why it all works. During the practical part we will guide you through writing a data loader and a training loop, visualizing and evaluating the model performance. The minimal requirements are basic Python skills: you should be comfortable with writing functions, using if-statements and for-loops. 
+
 
 

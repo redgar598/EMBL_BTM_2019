@@ -9,8 +9,8 @@ In order to follow along with this session you will need R (ideally R studio) wi
 #### Required Packages
 Whichever version you use you will need to install some key packages. So run these lines first. 
 ```
-install.packages(ggplot2)
-install.packages(reshape2)
+install.packages("ggplot2")
+install.packages("reshape2")
 ```
 
 or with conda
@@ -56,18 +56,18 @@ This session will be a workshop with several examples of complex plots presented
 
 Though you can develop your plots using any packages you like. I recommend the installation of these
 ```
-install.packages(ggplot2)
-install.packages(reshape2)
-install.packages(RColorBrewer)
-install.packages(scales)
-install.packages(gridExtra)
-install.packages(rafalib)
+install.packages("ggplot2")
+install.packages("reshape2")
+install.packages("RColorBrewer")
+install.packages("scales")
+install.packages("gridExtra")
+install.packages("rafalib")
 ```
 
 or through conda
 
 ```
-conda install -c conda-forge ggplot r-reshape2 r-rcolorbrewer r-scales r-gridextra
+conda install -c conda-forge ggplot r-reshape2 r-rcolorbrewer r-scales r-gridextra r-rafalib
 ```
 
 We will start with a [volcano plot](https://github.com/redgar598/EMBL_BTM_2019/blob/master/data_visualization/extended_plotting.R) I have made. 
