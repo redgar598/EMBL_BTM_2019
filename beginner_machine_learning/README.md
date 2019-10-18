@@ -10,6 +10,8 @@ conda activate BTM
 ```
 Then you can hopefully **skip** all the installation steps.
 
+**If this doesn't work for some reason:**
+
 ### Install Anaconda
 
 Please follow the instructions here: [Anaconda](https://www.anaconda.com/distribution/)
